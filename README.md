@@ -16,4 +16,6 @@ expected time: 5 hours
 
 actual time: 7 hours
 
-PR:https://github.com/MohdHanoti/pythonic-garage-band/pull/1
+PR-1:https://github.com/MohdHanoti/pythonic-garage-band/pull/1
+
+PR-2:https://github.com/MohdHanoti/pythonic-garage-band/pull/2
