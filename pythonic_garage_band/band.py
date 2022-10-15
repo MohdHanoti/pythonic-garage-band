@@ -1,6 +1,7 @@
 from abc import abstractmethod, ABC
 
 class Band:
+    """this class takes a name and members list as arguments and create object of the band and also store that object and return the band name and put the play solo content in solos list"""
     instances=[]
     def __init__(self, name, members):
         self.name=name
@@ -24,7 +25,7 @@ class Band:
 
 
 class Musician(ABC):
-       
+        """This class is the father class for Guitarist,Drummer and Bassist and will return a name and instrument for each one of them """
         def __init__(self, name):
             self.name = name
             
@@ -43,6 +44,7 @@ class Musician(ABC):
 
 
 class Guitarist(Musician):
+    """this class will set the Guitarist information and ins a child of musician class"""
     def __init__(self, name):
         super().__init__(name)
          
@@ -55,6 +57,8 @@ class Guitarist(Musician):
 
 
 class Drummer(Musician):
+    """this class will set the Drummer information and ins a child of musician class"""
+
     def __init__(self, name):
         super().__init__(name)
 
@@ -66,6 +70,8 @@ class Drummer(Musician):
         return "rattle boom crash"
     
 class Bassist(Musician):
+    """this class will set the Bassist information and ins a child of musician class"""
+
     def __init__(self,name):
         super().__init__(name)
 
